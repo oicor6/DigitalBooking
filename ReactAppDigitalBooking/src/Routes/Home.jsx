@@ -1,9 +1,11 @@
 import React from 'react'
+import Search from '../Components/Search'
 
 const Home = () => {
   return (
     <div>
-        <h1>Homeeeee</h1>
+      <Search/>
+        <h1>Home</h1>
         </div>
   )
 }

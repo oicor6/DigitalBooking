@@ -8,7 +8,7 @@ import IconDb from '../images/IconDb.png'
 const Footer = () => {
   return (
     <div className='footer'>
-      <h5>@2023 Digital Booking</h5>
+      <h5>©2023 Digital Booking</h5>
       <div className='logosFooter'>
       <img src={IconFb} alt="LogoFacebook"/>
       <img src={IconLk} alt="LogoLinkedin"/>
