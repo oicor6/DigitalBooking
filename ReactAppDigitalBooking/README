@@ -1,0 +1,3 @@
+Dependencias a instalar
+npm i react-router-dom
+npm install react-dates moment --save --legacy-peer-deps

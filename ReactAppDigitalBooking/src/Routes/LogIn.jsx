@@ -32,8 +32,8 @@ const onClick = (e) =>{
           </div>
           <p>{msg}</p>
           <div className="registro">
-            <p>Aun no tenes cuenta?</p>
-            <Link to={'/createacc'}><p>Registrate</p></Link>
+            <p>¿Aún no tenés cuenta?</p>
+            <Link to={'/createacc'}><p className='registroBoton'>Registrate</p></Link>
           </div>
       </form>
     </div>

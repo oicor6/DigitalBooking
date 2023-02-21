@@ -34,6 +34,33 @@ body {
   font-weight: bold;
   width: 10rem;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.headerButtons:hover {
+  color: #FFFFFF;
+}
+
+.headerButtons:after {
+  content: "";
+  background: #1DBEB4;
+  position: absolute;
+  z-index: -1;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scale(0, 0);
+  transition: all 0.3s ease;
+}
+
+.headerButtons:hover:after {
+  transition: all 0.3s ease-out;
+  transform: scale(1, 1);
 }
 
 .buttons {
@@ -91,6 +118,10 @@ body {
   margin-top: 1rem;
 }
 
+.closeLogin p:hover {
+  transform: scale(1.15, 1.15);
+}
+
 .login h1 {
   color: #1DBEB4;
   font-size: 1.5rem;
@@ -114,6 +145,9 @@ body {
   height: 2.75rem;
   border: none;
   border-radius: 8px;
+  padding: 1rem;
+  font-size: 1.25rem;
+  color: #383B58;
   margin-bottom: 1rem;
   box-shadow: 7px 9px 10px -7px rgba(0,0,0,0.25);
   -webkit-box-shadow: 7px 9px 10px -7px rgba(0,0,0,0.25);
@@ -134,12 +168,20 @@ body {
   cursor: pointer;
 }
 
+.login .ingresar:hover {
+  transform: scale(1.05, 1.05);
+}
+
 .registro {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3rem;
-  padding: 0 5.85rem;
+  padding: 0 5.5rem;
   font-size: 1rem;
+}
+
+.registro .registroBoton:hover {
+  transform: scale(1.05, 1.05);
 }
