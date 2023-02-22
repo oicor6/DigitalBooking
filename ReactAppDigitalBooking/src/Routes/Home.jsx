@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <Search/>
       <>
-      <h1>Buscar por tipo de alojamiento</h1>
+      <h2 className='tituloHome'>Buscar por tipo de alojamiento</h2>
       <div className='categoriesList'>
         {categoriesData.map(category => (
           <CategoryCard category={category} key={category.category}/>
@@ -18,7 +18,7 @@ const Home = () => {
       </div>
       </>
       <>
-      <h1>Recomendaciones</h1>
+      <h2 className='tituloHome'>Recomendaciones</h2>
       <div className='containerList'>
       {data.map( card => (
             <Card card={card} key={card.title}/>
