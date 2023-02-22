@@ -27,13 +27,21 @@ const onClick = (e) =>{
 
   return (
     <div className='signup'>
+            <Link className='closeLogin' to={'/'}><p>X</p></Link>
         <h1>Crear Cuenta</h1>
         <form>
           <div className='signupCampos'>
-          <label>Nombre</label>
-          <input {...name}/>
-          <label>Apellido</label>
-          <input {...surname}/>
+            <div className='nombreApellido'>
+                <div className='datoInput'>
+                  <label>Nombre</label>
+                  <input {...name}/>
+            </div>
+            <div className='datoInput'>
+                  <label>Apellido</label>
+                  <input {...surname}/>
+            </div>
+          </div>
+
           <label>Correo electrónico</label>
           <input {...email}/>
           <label>Contraseña</label>

@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #F3F1ED;
+  background-color: #F9F9F9;
   color: #383B58;
   min-height: 100vh;
 }
@@ -77,6 +77,45 @@ body {
   padding: 2rem 2rem;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.inputs{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 0.75rem;
+  width: 53rem;
+}
+.datePicker{
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  border-radius: 8px;
+  font-family: 'Poppins';
+  font-size: 0.9rem;
+  color: #7F7F7F;
+  border:none;
+}
+.buscar{
+  color: #FFFFFF;
+  background-color: #1DBEB4;
+  align-self: center;
+  padding: 0.5rem 10rem 0.5rem 5rem;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  width: 10rem;
+  cursor: pointer;
+  border: none;
+}
+.selectLugar{
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  border-radius: 8px;
+  font-family: 'Poppins';
+  font-size: 0.9rem;
+  color: #7F7F7F;
+  border:none;
+  margin-right: 0.75rem;
 }
 
 .footer {
@@ -107,6 +146,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 10.6rem;
 }
 
 .closeLogin {
@@ -126,6 +166,7 @@ body {
 .login h1 {
   color: #1DBEB4;
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .loginCampos {
@@ -186,7 +227,9 @@ body {
 .registro .registroBoton:hover {
   transform: scale(1.05, 1.05);
 }
-
+.tituloHome{
+  padding: 1rem;
+}
 .containerList{
   display: flex;
   flex-wrap: wrap;
@@ -327,11 +370,13 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 0.6rem;
 }
 
 .signup h1 {
   color: #1DBEB4;
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .signupCampos {
@@ -360,14 +405,24 @@ body {
   -webkit-box-shadow: 7px 9px 10px -7px rgba(0,0,0,0.25);
   -moz-box-shadow: 7px 9px 10px -7px rgba(0,0,0,0.25);
 }
-
+.nombreApellido{
+  display: flex;
+  flex-direction: row;
+}
+.datoInput{
+  display: flex;
+  flex-direction: column;
+}
+.datoInput input{
+  width: 87%;
+}
 .signup .crearCuenta {
   color: #FFFFFF;
   background-color: #1DBEB4;
   align-self: center;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  padding: 0.5rem 8rem 0.5rem 3rem;
+  padding: 0.5rem 11rem 0.5rem 3.5rem;
   border-radius: 8px;
   font-size: 1.25rem;
   font-weight: bold;
@@ -392,3 +447,4 @@ body {
 .linkLogin .linkloginBoton:hover {
   transform: scale(1.05, 1.05);
 }
+

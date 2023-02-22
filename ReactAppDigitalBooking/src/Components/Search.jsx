@@ -12,25 +12,27 @@ const Search = () => {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
   const cities = [...new Set(json.map(element => element .location))]
+
   return (
     <div className='searcher'>
       <h1>Busca ofertas en hoteles, casas y mucho más</h1>
-      <select name="" id="" onChange={(e) => {
+      <div className='inputs'>
+      <select className='selectLugar' name="" id="" onChange={(e) => {
                 setLugar(e.target.value)}
                 }>
                 <option value="">Lugar</option>
                 {cities.map((item, index) => <option key={index}>{item}</option>)}
-            </select>
-      {/* <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
-      <DatePicker selected={endDate} onChange={(date) => setEndDate(date)} /> */}
-      <DatePicker
+      </select>
+      <DatePicker className='datePicker'
+        placeholder="Checkin"
         selected={startDate}
         onChange={(date) => setStartDate(date)}
         selectsStart
         startDate={startDate}
         endDate={endDate}
       />
-      <DatePicker
+      <DatePicker className='datePicker'
+        placeholderText="Checkout"
         selected={endDate}
         onChange={(date) => setEndDate(date)}
         selectsEnd
@@ -38,7 +40,9 @@ const Search = () => {
         endDate={endDate}
         minDate={startDate}
       />
-      <button>Buscar</button>
+      <button className='buscar'>Buscar</button>
+      </div>
+     
     </div>
   )
 }
