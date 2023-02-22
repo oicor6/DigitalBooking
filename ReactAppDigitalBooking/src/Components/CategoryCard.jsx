@@ -2,7 +2,6 @@ import React from 'react'
 
 export const CategoryCard = ({category}) => {
   return (
-    // <div onClick={() => filterCategory(category.category)} className='categoryCard'>
     <div className='categoryCard'>    
         <img src={category.img} />
         <h3 style={{paddingLeft: '10px'}}>{category.category}</h3>

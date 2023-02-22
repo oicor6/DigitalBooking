@@ -20,6 +20,7 @@ const onClick = (e) =>{
   e.preventDefault();
   if( validPassword && validEmail && passwordsMatch){
     setMsg('ingreso correcto')
+    localStorage.setItem('Username',name.value + ' ' + surname.value)
   } else{
     setMsg('Por favor vuelva a intentarlo, sus credenciales son inválidas')
   }

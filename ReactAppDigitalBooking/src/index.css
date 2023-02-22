@@ -63,7 +63,27 @@ body {
   transition: all 0.3s ease-out;
   transform: scale(1, 1);
 }
+.imgPerfil{
+  background-color: #383B58;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgPerfil p{
+  font-size: 20px;
+  font-weight: 600;
+}
 
+.userBox{
+  display: flex;
+  width: 250px;
+  gap: 15px;
+}
 .buttons {
   width: 25vw;
   display: flex;

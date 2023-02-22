@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import useInput from '../Components/Utils/useInput'
 
 const LogIn = () => {
@@ -9,11 +9,18 @@ const LogIn = () => {
   const [msg, setMsg] = useState();
   const validEmail = /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)$/.test(email.value)
   const validPassword = /^(?=\w*[a-z])\S{6,}$/.test(password.value)
+  const [user, setUser] = useState({
+    email: 'digitalBooking@gmail.com',
+    pass: 'digital1',
+})
+const navigate = useNavigate()
 
 const onClick = (e) =>{
   e.preventDefault();
-  if(validEmail && validPassword){
+  if((validEmail && validPassword) && (email.value === user.email && password.value === user.pass)){
     setMsg('ingreso correcto')
+    navigate('/')
+    window.location.reload(true)
   } else{
     setMsg('Por favor vuelva a intentarlo, sus credenciales son inválidas')
   }
