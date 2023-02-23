@@ -63,6 +63,12 @@ body {
   transition: all 0.3s ease-out;
   transform: scale(1, 1);
 }
+.LogoMob{
+  display: none;
+}
+.MenuLogo{
+  display: none;
+}
 .imgPerfil{
   background-color: #383B58;
   color: white;
@@ -465,4 +471,101 @@ body {
     height: 60%;
   }
 
+}
+@media only screen and (min-width: 320px) and (max-width: 736px){
+  .LogoMob{
+    display: flex;
+    align-self: flex-start;
+  }
+  .inputs{
+    flex-direction: column;
+    justify-content: center;
+    width: 63vw;
+  }
+  .MenuLogo{
+    display:flex;
+    align-self: flex-end;
+  }
+  .LogoDesk{
+    display: none;
+  }
+  .headerButtons{
+    display: none;
+  }
+  .MenuLogo{
+    padding-left: 10rem;
+    align-self: flex-end;
+  }
+  .header{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+  }
+  .login {
+    flex-direction: column ;
+    justify-content: center;
+  }
+  .login input{
+    width: 90vw;
+  }
+  .closeLogin{
+    justify-content: center;
+    margin-right: 1rem;
+    padding: 0;
+  }
+  .registro{
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+  .loginCampos{
+    width: 100vw;
+    margin-top: 20px;
+    padding-left:20px;
+  }
+
+  .footer{
+    flex-direction: column;
+  }
+  .logosFooter{
+    display: none;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 736px){
+  .signupCampos input{
+    width: 80vw;
+  }
+  .nombreApellido{
+    flex-direction: column;
+  }
+  .signupCampos{
+    padding-left: 20px;
+  }
+  .linkLogin {
+    flex-direction: column ;
+    justify-content: center;
+    font-size: 0.75rem;
+  }
+  .linkLogin p {
+    text-align: center;
+  }
+  .nombreApellido {
+    padding-left: 0;
+  }
+  .dato2Input input{
+    padding-right: 1.5rem;
+  }
+}
+@media only screen and (min-width: 736px) and (max-width: 876px){
+  .LogoDesk{
+    display: none;
+  }
+  .LogoMob{
+    display: flex;
+  }
+  .botoniniciar{
+    display: none;
+  }
+  .logosFooter{
+    width: 25vw;
+  }
 }
