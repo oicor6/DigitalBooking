@@ -106,7 +106,7 @@ body {
   align-items: center;
   justify-content: space-around;
   margin-top: 0.75rem;
-  width: 53rem;
+  width: 56.5rem;
 }
 .datePicker{
   padding: 0.5rem 2.5rem 0.5rem 1rem;
@@ -145,7 +145,6 @@ body {
   justify-content: space-between;
   padding: 2rem 4rem;
   font-size: 1.5rem;
-  /* position: sticky; */
   bottom: 0;
   width: 100vw;
 }
@@ -247,6 +246,88 @@ body {
 .registro .registroBoton:hover {
   transform: scale(1.05, 1.05);
 }
+
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0.6rem;
+}
+
+.signup h1 {
+  color: #1DBEB4;
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.signupCampos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signup input {
+  width: 28rem;
+  height: 2.75rem;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1.25rem;
+  color: #383B58;
+  margin-bottom: 1rem;
+  box-shadow: 7px 9px 10px -7px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 7px 9px 10px -7px rgba(0,0,0,0.25);
+  -moz-box-shadow: 7px 9px 10px -7px rgba(0,0,0,0.25);
+}
+.nombreApellido {
+  display: flex;
+  padding-left: 2rem;
+}
+.datoInput, .dato2Input{
+  display: flex;
+  flex-direction: column;
+}
+
+.dato2Input input {
+  padding-right: 31rem;
+}
+.datoInput input{
+  width: 87%;
+}
+.signup .crearCuenta {
+  color: #FFFFFF;
+  background-color: #1DBEB4;
+  align-self: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 11rem 0.5rem 3.5rem;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  width: 10rem;
+  cursor: pointer;
+}
+
+.signup .crearCuenta:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.linkLogin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding: 0 8.75rem;
+  font-size: 1rem;
+}
+
+.linkLogin .linkloginBoton:hover {
+  transform: scale(1.05, 1.05);
+}
+
 .tituloHome{
   padding: 1rem;
 }
@@ -385,86 +466,3 @@ body {
   }
 
 }
-.signup {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 0.6rem;
-}
-
-.signup h1 {
-  color: #1DBEB4;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.signupCampos {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-direction: column;
-}
-
-.signupCampos span {
-  color: #383B58;
-  font-size: 1rem;
-  margin-bottom: 0.25rem;
-}
-
-.signup input {
-  width: 28rem;
-  height: 2.75rem;
-  border: none;
-  border-radius: 8px;
-  padding: 1rem;
-  font-size: 1.25rem;
-  color: #383B58;
-  margin-bottom: 1rem;
-  box-shadow: 7px 9px 10px -7px rgba(0,0,0,0.25);
-  -webkit-box-shadow: 7px 9px 10px -7px rgba(0,0,0,0.25);
-  -moz-box-shadow: 7px 9px 10px -7px rgba(0,0,0,0.25);
-}
-.nombreApellido{
-  display: flex;
-  flex-direction: row;
-}
-.datoInput{
-  display: flex;
-  flex-direction: column;
-}
-.datoInput input{
-  width: 87%;
-}
-.signup .crearCuenta {
-  color: #FFFFFF;
-  background-color: #1DBEB4;
-  align-self: center;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  padding: 0.5rem 11rem 0.5rem 3.5rem;
-  border-radius: 8px;
-  font-size: 1.25rem;
-  font-weight: bold;
-  width: 10rem;
-  cursor: pointer;
-}
-
-.signup .crearCuenta:hover {
-  transform: scale(1.05, 1.05);
-}
-
-.linkLogin {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 3rem;
-  padding: 0 5.5rem;
-  font-size: 1rem;
-}
-
-.linkLogin .linkloginBoton:hover {
-  transform: scale(1.05, 1.05);
-}
-

@@ -33,23 +33,28 @@ const onClick = (e) =>{
         <form>
           <div className='signupCampos'>
             <div className='nombreApellido'>
-                <div className='datoInput'>
-                  <label>Nombre</label>
-                  <input {...name}/>
+              <div className='datoInput'>
+                <label>Nombre</label>
+                <input {...name}/>
+              </div>
+              <div className='datoInput'>
+                <label>Apellido</label>
+                <input {...surname}/>
+              </div>
             </div>
-            <div className='datoInput'>
-                  <label>Apellido</label>
-                  <input {...surname}/>
+            <div className="dato2Input">
+              <label>Correo electrónico</label>
+              <input {...email}/>
             </div>
-          </div>
-
-          <label>Correo electrónico</label>
-          <input {...email}/>
-          <label>Contraseña</label>
-          <input {...password}/>
-          <label>Confirmar contraseña</label>
-          <input {...confirmPassword}/>
-          <input className='crearCuenta' type='submit' value="Crear cuenta" onClick={onClick}/>
+            <div className="dato2Input">
+              <label>Contraseña</label>
+              <input {...password}/>
+            </div>
+            <div className="dato2Input">
+              <label>Confirmar contraseña</label>
+              <input {...confirmPassword}/>
+              </div>
+            <input className='crearCuenta' type='submit' value="Crear cuenta" onClick={onClick}/>
           </div>
           <p>{msg}</p>
           <div className='linkLogin'>
