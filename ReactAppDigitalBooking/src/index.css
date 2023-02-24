@@ -96,6 +96,12 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.visible{
+  display: flex;
+}
+.invisible{
+  display: none;
+}
 
 .searcher {
   background-color: #545776;
@@ -297,7 +303,8 @@ body {
 }
 
 .dato2Input input {
-  padding-right: 31rem;
+  /* padding-right: 31rem; */
+  color: #383B58;
 }
 .datoInput input{
   width: 87%;
